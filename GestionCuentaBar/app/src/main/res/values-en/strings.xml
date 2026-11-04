@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">The bill, please</string>
+    <string name="titulo">Bill management</string>
+    <string name="subtitulo">THE BILL, PLEASE</string>
+
+    <string name="cuenta">Bill total (€)</string>
+    <string name="introducir_cuenta">Enter the amount</string>
+
+    <string name="incluir_propina">Include tip</string>
+    <string name="porcentaje_10">Tip: 10%</string>
+    <string name="porcentaje">Tip: %1$d%%</string>
+
+    <string name="seccion_cuenta">🧾 BILL TOTAL</string>
+    <string name="seccion_pago">💳 PAYMENT METHOD</string>
+    <string name="seccion_valoracion">⭐ SERVICE RATING</string>
+
+    <string name="metodo_pago">Payment method</string>
+    <string name="efectivo">Cash</string>
+    <string name="tarjeta">Card</string>
+
+    <string name="valoracion">Service rating</string>
+    <string name="calcular">Calculate total</string>
+
+    <string name="error_vacio">Please enter the bill amount.</string>
+    <string name="error_formato">The amount format is invalid.</string>
+    <string name="error_cantidad">The bill must be greater than zero.</string>
+
+    <string name="resultado">Total: %1$s\nPayment method: %2$s\nRating: %3$.0f/5</string>
+</resources>

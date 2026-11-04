@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFF5E8"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- CABECERA -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:padding="22dp"
+            android:background="@drawable/bg_cabecera">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="🍷"
+                android:textSize="38sp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/titulo"
+                android:textColor="#FFFFFF"
+                android:textSize="27sp"
+                android:textStyle="bold"
+                android:gravity="center"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/subtitulo"
+                android:textColor="#F5D9B5"
+                android:textSize="12sp"
+                android:letterSpacing="0.15"
+                android:layout_marginTop="6dp"/>
+
+        </LinearLayout>
+
+        <!-- IMPORTE DE LA CUENTA -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="18dp"
+            android:layout_marginTop="18dp"
+            android:background="@drawable/bg_tarjeta">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/seccion_cuenta"
+                android:textColor="#702033"
+                android:textStyle="bold"
+                android:textSize="16sp"/>
+
+            <EditText
+                android:id="@+id/etCuenta"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:background="@drawable/bg_campo"
+                android:padding="14dp"
+                android:hint="@string/introducir_cuenta"
+                android:inputType="numberDecimal|numberSigned"
+                android:textSize="18sp"
+                android:textColor="#422A24"
+                android:textColorHint="#A18B84"/>
+
+        </LinearLayout>
+
+        <!-- PROPINA -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="18dp"
+            android:layout_marginTop="14dp"
+            android:background="@drawable/bg_tarjeta">
+
+            <CheckBox
+                android:id="@+id/cbPropina"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/incluir_propina"
+                android:textColor="#702033"
+                android:textStyle="bold"
+                android:textSize="17sp"
+                android:buttonTint="#702033"/>
+
+            <TextView
+                android:id="@+id/tvPorcentaje"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/porcentaje_10"
+                android:textColor="#702033"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:gravity="center"
+                android:layout_marginTop="10dp"/>
+
+            <SeekBar
+                android:id="@+id/sbPropina"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:max="30"
+                android:progress="10"
+                android:progressTint="#8B1935"
+                android:thumbTint="#8B1935"
+                android:progressBackgroundTint="#E6D8CA"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="0%"
+                    android:textColor="#702033"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="30%"
+                    android:textColor="#702033"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <!-- METODO DE PAGO -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="18dp"
+            android:layout_marginTop="14dp"
+            android:background="@drawable/bg_tarjeta">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/seccion_pago"
+                android:textColor="#702033"
+                android:textStyle="bold"
+                android:textSize="16sp"/>
+
+            <RadioGroup
+                android:id="@+id/rgPago"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_marginTop="10dp">
+
+                <RadioButton
+                    android:id="@+id/rbEfectivo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/efectivo"
+                    android:textColor="#422A24"
+                    android:buttonTint="#8B1935"
+                    android:checked="true"/>
+
+                <RadioButton
+                    android:id="@+id/rbTarjeta"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/tarjeta"
+                    android:textColor="#422A24"
+                    android:buttonTint="#8B1935"
+                    android:layout_marginStart="20dp"/>
+
+            </RadioGroup>
+
+        </LinearLayout>
+
+        <!-- VALORACION -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="18dp"
+            android:layout_marginTop="14dp"
+            android:background="@drawable/bg_tarjeta">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/seccion_valoracion"
+                android:textColor="#702033"
+                android:textStyle="bold"
+                android:textSize="16sp"/>
+
+            <RatingBar
+                android:id="@+id/rbValoracion"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:numStars="5"
+                android:stepSize="1"
+                android:rating="3"
+                android:progressTint="#E6A52E"
+                android:secondaryProgressTint="#E6A52E"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"/>
+
+        </LinearLayout>
+
+        <!-- BOTON CALCULAR -->
+        <Button
+            android:id="@+id/btnCalcular"
+            android:layout_width="match_parent"
+            android:layout_height="58dp"
+            android:layout_marginTop="18dp"
+            android:text="@string/calcular"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="#FFFFFF"
+            android:background="@drawable/bg_boton"
+            android:backgroundTint="@null"
+            android:textAllCaps="false"
+            android:elevation="3dp"/>
+
+        <!-- RESULTADO -->
+        <TextView
+            android:id="@+id/tvResultado"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="20dp"
+            android:padding="18dp"
+            android:background="@drawable/bg_resultado"
+            android:textColor="#422A24"
+            android:textSize="17sp"
+            android:lineSpacingExtra="6dp"
+            android:visibility="gone"/>
+
+    </LinearLayout>
+
+</ScrollView>

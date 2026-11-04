@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">La cuenta, por favor</string>
+    <string name="titulo">Gestión de cuenta</string>
+    <string name="subtitulo">LA CUENTA, POR FAVOR</string>
+
+    <string name="cuenta">Total de la cuenta (€)</string>
+    <string name="introducir_cuenta">Introduce el importe</string>
+
+    <string name="incluir_propina">Incluir propina</string>
+    <string name="porcentaje_10">Propina: 10%</string>
+    <string name="porcentaje">Propina: %1$d%%</string>
+
+    <string name="seccion_cuenta">🧾 TOTAL DE LA CUENTA</string>
+    <string name="seccion_pago">💳 MÉTODO DE PAGO</string>
+    <string name="seccion_valoracion">⭐ VALORACIÓN DEL SERVICIO</string>
+
+    <string name="metodo_pago">Método de pago</string>
+    <string name="efectivo">Efectivo</string>
+    <string name="tarjeta">Tarjeta</string>
+
+    <string name="valoracion">Valoración del servicio</string>
+    <string name="calcular">Calcular total</string>
+
+    <string name="error_vacio">Falta introducir el valor de la cuenta.</string>
+    <string name="error_formato">El formato del importe no es válido.</string>
+    <string name="error_cantidad">La cuenta debe ser mayor que cero.</string>
+
+    <string name="resultado">Total: %1$s\nMétodo de pago: %2$s\nValoración: %3$.0f/5</string>
+</resources>
